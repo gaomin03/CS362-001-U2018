@@ -21,7 +21,19 @@ public class ApptTest  {
   }
 @Test(timeout = 4000)
  public void test01()  throws Throwable  {
-
+     
+    
+    Appt appt= new Appt(90, 80, 70, 20, 7, "Birthday Party", "This is my birthday party",
+     appt.toString();
+     
+     assertTrue(appt.getValid());
+     assertEquals(10, appt.getStartDay());
+     assertEquals(01, appt.getStartMonth());
+     assertEquals(2010, appt.getStartYear());
+     assertEquals(20, appt.getStartHour());
+     assertEquals(20, appt.getStartMinute());
+     assertEquals("Birthday Party", appt.getTitle());
+     assertEquals("This is my birthday party.", appt.getDescription());
 
 }
 
